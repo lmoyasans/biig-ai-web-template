@@ -12237,7 +12237,7 @@ section .section-title {
   width:50%;
   margin-left: auto;
   padding-right: 30px;
-  display: flex;
+  display: fixed;
   align-items:center;
 }
 

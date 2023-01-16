@@ -1,3 +1,4 @@
+let desired_position = $("preprints").offset();
 $(() => {
   let stickyTop = 0,
     scrollTarget = false;
@@ -56,3 +57,95 @@ $(() => {
     items.eq(active != -1 ? active : 0).addClass('active');
   }).trigger('scroll');
 });
+
+$("#journals-a").click(function(){
+    $("#journals").show();
+    $("#menu-pub .slider .bar").css("margin-left","16.66%");
+    $("slide-item-1").css("opacity","0.2");
+    $("slide-item-2").css("opacity","1");
+    $("slide-item-3").css("opacity","0.2");
+    $("slide-item-4").css("opacity","0.2");
+    $("slide-item-5").css("opacity","0.2");
+    $("slide-item-6").css("opacity","0.2");
+    $("#preprints").hide();
+    $("#conferences").hide();
+    $("#books").hide();
+    $("#abstracts").hide();
+    $("#PhDs").hide(); 
+  }); 
+
+$("#preprint-a").click(function(){
+    $("#journals").hide();
+    $("#preprints").show();
+    $("#menu-pub .slider .bar").css("margin-left","0%");
+    $("slide-item-1").css("opacity","1");
+    $("slide-item-2").css("opacity","0.2");
+    $("slide-item-3").css("opacity","0.2");
+    $("slide-item-4").css("opacity","0.2");
+    $("slide-item-5").css("opacity","0.2");
+    $("slide-item-6").css("opacity","0.2");
+    $("#conferences").hide();
+    $("#books").hide();
+    $("#abstracts").hide();
+    $("#PhDs").hide(); 
+  }); 
+$("#conferences-a").click(function(){
+    $("#journals").hide();
+    $("#preprints").hide();
+    $("#menu-pub .slider .bar").css("margin-left","33.33%");
+    $("slide-item-1").css("opacity","0.2");
+    $("slide-item-2").css("opacity","0.2");
+    $("slide-item-3").css("opacity","1");
+    $("slide-item-4").css("opacity","0.2");
+    $("slide-item-5").css("opacity","0.2");
+    $("slide-item-6").css("opacity","0.2");
+    $("#conferences").show();
+    $("#books").hide();
+    $("#abstracts").hide();
+    $("#PhDs").hide(); 
+  }); 
+$("#books-a").click(function(){
+    $("#journals").hide();
+    $("#preprints").hide();
+    $("#conferences").hide();
+    $("#menu-pub .slider .bar").css("margin-left","50%");
+    $("slide-item-1").css("opacity","0.2");
+    $("slide-item-2").css("opacity","0.2");
+    $("slide-item-3").css("opacity","0.2");
+    $("slide-item-4").css("opacity","1");
+    $("slide-item-5").css("opacity","0.2");
+    $("slide-item-6").css("opacity","0.2");
+    $("#books").show();
+    $("#abstracts").hide();
+    $("#PhDs").hide(); 
+  }); 
+$("#abstracts-a").click(function(){
+    $("#journals").hide();
+    $("#preprints").hide();
+    $("#conferences").hide();
+    $("#books").hide();
+    $("#menu-pub .slider .bar").css("margin-left","66.66%");
+    $("slide-item-1").css("opacity","0.2");
+    $("slide-item-2").css("opacity","0.2");
+    $("slide-item-3").css("opacity","0.2");
+    $("slide-item-4").css("opacity","0.2");
+    $("slide-item-5").css("opacity","1");
+    $("slide-item-6").css("opacity","0.2");
+    $("#abstracts").show();
+    $("#PhDs").hide(); 
+  }); 
+$("#PhDs-a").click(function(){
+    $("#journals").hide();
+    $("#preprints").hide();
+    $("#conferences").hide();
+    $("#books").hide();
+    $("#abstracts").hide();
+    $("#menu-pub .slider .bar").css("margin-left","83.33%");
+    $("slide-item-1").css("opacity","0.2");
+    $("slide-item-2").css("opacity","0.2");
+    $("slide-item-3").css("opacity","0.2");
+    $("slide-item-4").css("opacity","0.2");
+    $("slide-item-5").css("opacity","0.2");
+    $("slide-item-6").css("opacity","1");
+    $("#PhDs").show(); 
+  }); 

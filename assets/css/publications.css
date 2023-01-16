@@ -25,6 +25,23 @@
 	 top: 0;
 	 transition: top 0.3s ease-out;
 }
+
+#books{
+    display:none;
+}
+#conferences{
+    display:none;
+}
+#PhDs{
+    display:none;
+}
+#abstracts{
+    display:none;
+}
+#journals{
+    display:none;
+}
+
  .timeline__nav ul {
 	 list-style: none;
 	 list-style-position: inside;
@@ -64,7 +81,9 @@
     margin: 50px auto;
     overflow: hidden;
     -webkit-transition: all, 0.33s;
-    transition: all, 0.33s;
+    transition: all, 0.33s; 
+    position: sticky;
+    margin-bottom:150px;
   }
   
   .slidemenu label{
@@ -121,11 +140,11 @@
     color:#000;
   }
   
-  
+  /*
   .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
   .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 16.66%; }
   .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 33.33%; }
   .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 50%; }
   .slidemenu #slide-item-5:checked ~ .slider .bar{ margin-left: 66.66%; }
   .slidemenu #slide-item-6:checked ~ .slider .bar{ margin-left: 83.33%; }
-  
+  */

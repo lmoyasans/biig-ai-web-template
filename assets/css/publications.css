@@ -8,6 +8,7 @@
  body {
 	 font-family: 'Exo 2', sans-serif;
 	 line-height: 1.5;
+   height:fit-content;
 }
  .wrapper {
 	 margin: 0 auto;
@@ -21,6 +22,7 @@
 }
  .timeline__nav {
 	 position: fixed;
+   margin-left:1.5rem;
 	 z-index: 99;
 	 top: 0;
 	 transition: top 0.3s ease-out;
@@ -33,9 +35,6 @@
     display:none;
 }
 #PhDs{
-    display:none;
-}
-#abstracts{
     display:none;
 }
 #journals{
@@ -77,13 +76,16 @@
   
   .slidemenu{
     font-family: arial, sans-serif;
-    max-width: 600px;
+    max-width: 42rem;
     margin: 50px auto;
     overflow: hidden;
     -webkit-transition: all, 0.33s;
     transition: all, 0.33s; 
     position: sticky;
     margin-bottom:150px;
+    top:70px;
+    z-index:500;
+    background-color:white;
   }
   
   .slidemenu label{
